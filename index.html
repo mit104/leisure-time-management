@@ -5,84 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leisure Time Management</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+
         header {
-            background-color: #007bff;
-            color: white;
             text-align: center;
             padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
         }
-        section {
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        #team {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .team-member {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        #problem, #research, #features, #design {
+            background: white;
             padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #007bff;
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
         }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+        }
+
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #007bff;
+            background-color: #4CAF50;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Leisure Time Management</h1>
-        <p>Manage your leisure time effectively</p>
+        <p>Optimize your free time for productivity and relaxation.</p>
     </header>
 
-    <section id="team-info">
-        <h2>Team Info</h2>
-        <p><strong>Team Members:</strong></p>
+    <section id="team">
+        <h2>Team</h2>
+        <div class="team-member">
+            <img src="team1.jpg" alt="Team Member 1">
+            <p>Member 1</p>
+        </div>
+        <div class="team-member">
+            <img src="team2.jpg" alt="Team Member 2">
+            <p>Member 2</p>
+        </div>
+        <div class="team-member">
+            <img src="team3.jpg" alt="Team Member 3">
+            <p>Member 3</p>
+        </div>
+    </section>
+
+    <section id="problem">
+        <h2>Problem and Solution Overview</h2>
+        <p>Many individuals struggle with managing their leisure time effectively, leading to wasted opportunities for relaxation and productivity. Our project aims to provide a solution that helps users balance their recreational activities with productive tasks.</p>
+        <p>Our platform offers tools to track time spent on leisure activities, set goals for personal hobbies, and optimize time allocation between different interests.</p>
+        <img src="solution-overview.jpg" alt="Solution Overview">
+    </section>
+
+    <section id="research">
+        <h2>Research and Insights</h2>
+        <p>Through surveys and interviews, we discovered key issues people face with managing their free time:</p>
         <ul>
-            <li>Member 1 - Role (e.g., Developer)</li>
-            <li>Member 2 - Role (e.g., Researcher)</li>
-            <li>Member 3 - Role (e.g., Designer)</li>
+            <li>Overwhelming choice of activities, leading to decision fatigue.</li>
+            <li>Poor time-tracking habits for recreational tasks.</li>
+            <li>Difficulty balancing relaxation and productive hobbies.</li>
         </ul>
     </section>
 
-    <section id="problem-overview">
-        <h2>Problem and Design Overview</h2>
-        <p>
-            The problem we are addressing is the lack of tools to effectively manage leisure time. Many people struggle 
-            to balance their work and personal lives, often forgetting to allocate time for relaxation and fun activities.
-        </p>
-        <p>
-            Our solution is an application that helps users plan and track their leisure activities, providing reminders 
-            and reports on how they spend their time.
-        </p>
+    <section id="features">
+        <h2>Key Features</h2>
+        <p>Based on our research, our platform offers the following features:</p>
+        <ul>
+            <li>Time tracking for various leisure activities.</li>
+            <li>Recommendations based on personal preferences and past activities.</li>
+            <li>Goal setting for productive and relaxing tasks.</li>
+        </ul>
+        <img src="features.jpg" alt="Platform Features">
     </section>
 
-    <section id="research-process">
-        <h2>Design Research Process and Key Insights</h2>
-        <p>
-            During our research process, we conducted surveys and interviews with potential users to understand their 
-            pain points. Our key insights include:
-        </p>
+    <section id="design">
+        <h2>Design Process</h2>
+        <p>Our design process focused on creating an intuitive and user-friendly interface:</p>
         <ul>
-            <li>Users need reminders to take breaks and engage in leisure activities.</li>
-            <li>Many people have difficulty tracking how much time they spend on non-work activities.</li>
-            <li>An easy-to-use interface is crucial for encouraging users to adopt the tool.</li>
+            <li>Clear visual representation of time spent on activities.</li>
+            <li>Simple navigation for adding and tracking new hobbies.</li>
+            <li>Integration with calendar apps to provide real-time suggestions for available leisure slots.</li>
         </ul>
+        <img src="design-process.jpg" alt="Design Process">
     </section>
 
     <footer>
-        <p>&copy; 2024 Leisure Time Management Project Team</p>
+        <p>&copy; 2024 Leisure Time Management Team</p>
     </footer>
 </body>
 </html>
-Create index.html with website structure
