@@ -1,153 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leisure Time Management</title>
+    <title>Quản lý thời gian giải trí</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-
         header {
-            text-align: center;
-            padding: 10px 0;
             background-color: #4CAF50;
             color: white;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 5px;
-        }
-
-        #team {
-            margin: 20px 0;
+            padding: 20px 0;
             text-align: center;
         }
-
-        .team-member {
-            display: inline-block;
-            margin: 10px;
-            text-align: center;
-        }
-
-        .team-member img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-
-        #problem, #research, #features, #design {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #4CAF50;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 10px auto;
-        }
-
-        footer {
+        nav {
+            background: #333;
+            color: white;
             text-align: center;
             padding: 10px;
-            background-color: #4CAF50;
+        }
+        nav a {
             color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
             margin-top: 20px;
+        }
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .team-member {
+            text-align: center;
+            width: 30%;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .team-member p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .chart img {
+            display: block;
+            margin: auto;
+            max-width: 600px;
+            width: 100%;
+        }
+        .design-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .design-images img {
+            width: 48%;
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Test</h1>
-        <p>Optimize your free time for productivity and relaxation.</p>
+        <h1>Quản lý thời gian giải trí</h1>
+        <p>Giải pháp tối ưu giúp cân bằng thời gian giải trí và công việc</p>
     </header>
 
-    <section id="team">
-        <h2>Team</h2>
-        <div class="team-member">
-            <img src="team1.jpg" alt="Team Member 1">
-            <p>Member 1</p>
-        </div>
-        <div class="team-member">
-            <img src="team2.jpg" alt="Team Member 2">
-            <p>Member 2</p>
-        </div>
-        <div class="team-member">
-            <img src="team3.jpg" alt="Team Member 3">
-            <p>Member 3</p>
-        </div>
-    </section>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#research">Chi tiết nghiên cứu</a>
+        <a href="#design">Thiết kế sản phẩm</a>
+    </nav>
 
-    <section id="problem">
-        <h2>Problem and Solution Overview</h2>
-        <p>Many individuals struggle with managing their leisure time effectively, leading to wasted opportunities for relaxation and productivity. Our project aims to provide a solution that helps users balance their recreational activities with productive tasks.</p>
-        <p>Our platform offers tools to track time spent on leisure activities, set goals for personal hobbies, and optimize time allocation between different interests.</p>
-        <img src="solution-overview.jpg" alt="Solution Overview">
-    </section>
+    <!-- Main Content -->
+    <div class="container">
 
-    <section id="research">
-        <h2>Research and Insights</h2>
-        <p>Through surveys and interviews, we discovered key issues people face with managing their free time:</p>
-        <ul>
-            <li>Overwhelming choice of activities, leading to decision fatigue.</li>
-            <li>Poor time-tracking habits for recreational tasks.</li>
-            <li>Difficulty balancing relaxation and productive hobbies.</li>
-        </ul>
-    </section>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Nhóm Nghiên Cứu</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Nguyễn Văn A">
+                    <p>Lê Việt Hòa</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Trần Thị B">
+                    <p>Nguyễn Minh Nguyệt</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Phạm Minh C">
+                    <p>Trần Huy Việt</p>
+                </div>
+            </div>
+            <p>Chúng tôi là nhóm nghiên cứu gồm 3 thành viên, mỗi người có những kỹ năng và kinh nghiệm khác nhau trong lĩnh vực công nghệ thông tin, tâm lý học, và thiết kế giao diện người dùng. Dự án của chúng tôi tập trung vào việc xây dựng một công cụ giúp người dùng quản lý thời gian giải trí một cách hiệu quả và đạt được sự cân bằng giữa công việc và cuộc sống cá nhân. Chúng tôi tin rằng với sự phát triển không ngừng của công nghệ, việc quản lý thời gian trở nên quan trọng hơn bao giờ hết.</p>
+        </section>
 
-    <section id="features">
-        <h2>Key Features</h2>
-        <p>Based on our research, our platform offers the following features:</p>
-        <ul>
-            <li>Time tracking for various leisure activities.</li>
-            <li>Recommendations based on personal preferences and past activities.</li>
-            <li>Goal setting for productive and relaxing tasks.</li>
-        </ul>
-        <img src="features.jpg" alt="Platform Features">
-    </section>
+        <!-- Research Section -->
+        <section id="research">
+            <h2>Chi tiết nghiên cứu</h2>
+            <p>Nghiên cứu của chúng tôi bao gồm hai giai đoạn chính: thu thập dữ liệu từ người dùng thực tế và phân tích các xu hướng trong cách mọi người sử dụng thời gian giải trí. Dữ liệu này sau đó được sử dụng để phát triển và tối ưu hóa sản phẩm.</p>
 
-    <section id="design">
-        <h2>Design Process</h2>
-        <p>Our design process focused on creating an intuitive and user-friendly interface:</p>
-        <ul>
-            <li>Clear visual representation of time spent on activities.</li>
-            <li>Simple navigation for adding and tracking new hobbies.</li>
-            <li>Integration with calendar apps to provide real-time suggestions for available leisure slots.</li>
-        </ul>
-        <img src="design-process.jpg" alt="Design Process">
-    </section>
+            <h3>Thu thập dữ liệu</h3>
+            <p>Trong giai đoạn đầu, chúng tôi đã khảo sát hơn 2000 người dùng từ các độ tuổi và ngành nghề khác nhau trên khắp Việt Nam. Dữ liệu thu thập được cho thấy rằng:</p>
+            <ul>
+                <li>75% người tham gia dành hơn 3 giờ mỗi ngày cho các hoạt động giải trí, nhưng họ không nhận thức rõ ràng về việc quản lý thời gian này.</li>
+                <li>Gần 65% số người được hỏi cảm thấy họ không thể kiểm soát tốt thời gian của mình, dẫn đến việc bỏ lỡ các mục tiêu cá nhân và công việc.</li>
+                <li>Hơn 85% người tham gia cho biết họ gặp khó khăn trong việc tìm ra sự cân bằng giữa giải trí và trách nhiệm công việc, học tập.</li>
+            </ul>
 
+            <h3>Kết quả phân tích</h3>
+            <p>Phân tích dữ liệu cho thấy rằng một trong những yếu tố quan trọng nhất ảnh hưởng đến việc quản lý thời gian là sự tập trung và tính kỷ luật cá nhân. Những người có khả năng lập kế hoạch cho thời gian giải trí thường có chất lượng cuộc sống tốt hơn, ít bị căng thẳng và có thể hoàn thành công việc đúng thời hạn.</p>
+            <ul>
+                <li>Người lập kế hoạch cho thời gian giải trí thường cảm thấy vui vẻ và giảm căng thẳng sau giờ làm việc hoặc học tập.</li>
+                <li>Các hoạt động giải trí ngắn nhưng tập trung giúp cải thiện hiệu quả công việc, đồng thời tạo cảm giác thoải mái.</li>
+                <li>Quá nhiều thời gian giải trí không có kế hoạch có thể gây ra sự xao lãng và giảm năng suất công việc.</li>
+            </ul>
+            <div class="chart">
+                <img src="https://via.placeholder.com/600x400" alt="Biểu đồ khảo sát">
+            </div>
+        </section>
+
+        <!-- Design Section -->
+        <section id="design">
+            <h2>Thiết kế sản phẩm</h2>
+            <p>Dựa trên dữ liệu thu thập được, chúng tôi đã phát triển một ứng dụng quản lý thời gian giải trí với các tính năng chính như sau:</p>
+
+            <h3>Quản lý thời gian giải trí</h3>
+            <p>Người dùng có thể tạo các lịch giải trí và công việc hàng ngày, hàng tuần một cách linh hoạt. Ứng dụng sẽ giúp họ theo dõi thời gian dành cho các hoạt động giải trí như xem phim, chơi game, đọc sách... và nhắc nhở khi thời gian vượt quá mức cho phép.</p>
+
+            <h3>Tính năng nhắc nhở và báo cáo</h3>
+            <p>Ứng dụng có tính năng nhắc nhở người dùng khi sắp hết thời gian giải trí hoặc khi cần quay lại công việc. Thống kê và báo cáo chi tiết sẽ giúp người dùng nhìn lại thói quen giải trí của mình trong một khoảng thời gian nhất định, từ đó có những điều chỉnh hợp lý.</p>
+
+            <h3>Tích hợp công nghệ AI</h3>
+            <p>Chúng tôi sử dụng công nghệ trí tuệ nhân tạo (AI) để phân tích thói quen của người dùng và đề xuất các hoạt động giải trí phù hợp với thời gian và sở thích cá nhân. Điều này giúp người dùng không chỉ quản lý thời gian tốt hơn mà còn tận hưởng những khoảnh khắc giải trí một cách trọn vẹn.</p>
+
+            <div class="design-images">
+                <img src="https://via.placeholder.com/500x300" alt="Giao diện ứng dụng 1">
+                <img src="https://via.placeholder.com/500x300" alt="Giao diện ứng dụng 2">
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Leisure Time Management Team</p>
+        <p>&copy; 2024 Nhóm nghiên cứu quản lý thời gian giải trí</p>
     </footer>
+
 </body>
 </html>
